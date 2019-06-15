@@ -2,111 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Robot Forest</title>
-    <link>kristophm.github.io/robot-forest-static/categories/</link>
+    <link>robotforest.io/categories/</link>
     <description>Recent content in Categories on Robot Forest</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="kristophm.github.io/robot-forest-static/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="robotforest.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>kristophm.github.io/robot-forest-static/categories/</link>
+      <link>robotforest.io/categories/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>kristophm.github.io/robot-forest-static/categories/</guid>
+      <guid>robotforest.io/categories/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>kristophm.github.io/robot-forest-static/categories/markdown/</link>
+      <link>robotforest.io/categories/markdown/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>kristophm.github.io/robot-forest-static/categories/markdown/</guid>
+      <guid>robotforest.io/categories/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cheese</title>
-      <link>kristophm.github.io/robot-forest-static/categories/cheese/</link>
+      <link>robotforest.io/categories/cheese/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>kristophm.github.io/robot-forest-static/categories/cheese/</guid>
+      <guid>robotforest.io/categories/cheese/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>kristophm.github.io/robot-forest-static/categories/hugo/</link>
+      <link>robotforest.io/categories/hugo/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>kristophm.github.io/robot-forest-static/categories/hugo/</guid>
+      <guid>robotforest.io/categories/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>kristophm.github.io/robot-forest-static/categories/go/</link>
+      <link>robotforest.io/categories/go/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>kristophm.github.io/robot-forest-static/categories/go/</guid>
+      <guid>robotforest.io/categories/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>kristophm.github.io/robot-forest-static/categories/machine-learning/</link>
+      <link>robotforest.io/categories/machine-learning/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>kristophm.github.io/robot-forest-static/categories/machine-learning/</guid>
+      <guid>robotforest.io/categories/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pandas</title>
-      <link>kristophm.github.io/robot-forest-static/categories/pandas/</link>
+      <link>robotforest.io/categories/pandas/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>kristophm.github.io/robot-forest-static/categories/pandas/</guid>
+      <guid>robotforest.io/categories/pandas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>kristophm.github.io/robot-forest-static/categories/python/</link>
+      <link>robotforest.io/categories/python/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>kristophm.github.io/robot-forest-static/categories/python/</guid>
+      <guid>robotforest.io/categories/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scikit Learn</title>
-      <link>kristophm.github.io/robot-forest-static/categories/scikit-learn/</link>
+      <link>robotforest.io/categories/scikit-learn/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>kristophm.github.io/robot-forest-static/categories/scikit-learn/</guid>
+      <guid>robotforest.io/categories/scikit-learn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seaborn</title>
-      <link>kristophm.github.io/robot-forest-static/categories/seaborn/</link>
+      <link>robotforest.io/categories/seaborn/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>kristophm.github.io/robot-forest-static/categories/seaborn/</guid>
+      <guid>robotforest.io/categories/seaborn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jekyll</title>
-      <link>kristophm.github.io/robot-forest-static/categories/jekyll/</link>
+      <link>robotforest.io/categories/jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>kristophm.github.io/robot-forest-static/categories/jekyll/</guid>
+      <guid>robotforest.io/categories/jekyll/</guid>
       <description></description>
     </item>
     
