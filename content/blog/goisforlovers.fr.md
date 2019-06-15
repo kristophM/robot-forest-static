@@ -1,6 +1,6 @@
 +++
 author = "Unknown Author"
-categories = ["Go"]
+categories = ["Python", "Pandas", "Seaborn", "Scikit Learn", "Machine Learning"]
 date = "2014-04-02"
 description = ""
 featured = "pic02.jpg"

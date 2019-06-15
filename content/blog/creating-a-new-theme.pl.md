@@ -1,6 +1,6 @@
 +++
 author = "Autor tematu"
-categories = ["Hugo"]
+categories = ["Hugo", "Cheese"]
 date = "2014-09-28"
 description = "Dowiedz się, jak stworzyć motyw na Hugo"
 featured = "pic03.jpg"
