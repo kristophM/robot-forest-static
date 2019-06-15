@@ -8,6 +8,7 @@ disqusShortname         = ""
 googleAnalytics         = "UA-142123167-1"
 pluralizeListTitles     = false
 disableLanguages        = [""]
+publishDir              = "docs"
 
 
 [params]
