@@ -1,4 +1,4 @@
-baseurl                 = "kristophm.github.io/robot-forest-static" # TODO: Change to custom domain
+baseurl                 = "robotforest.io"
 DefaultContentLanguage  = "en"
 title                   = "Robot Forest"
 theme                   = "hugo-future-imperfect-slim"
