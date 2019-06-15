@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cheese on Robot Forest</title>
-    <link>robotforest.io/categories/cheese/</link>
+    <link>https://robotforest.io/categories/cheese/</link>
     <description>Recent content in Cheese on Robot Forest</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="robotforest.io/categories/cheese/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robotforest.io/categories/cheese/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tworzenie nowego motywu</title>
-      <link>robotforest.io/blog/creating-a-new-theme.pl/</link>
+      <link>https://robotforest.io/blog/creating-a-new-theme.pl/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>robotforest.io/blog/creating-a-new-theme.pl/</guid>
+      <guid>https://robotforest.io/blog/creating-a-new-theme.pl/</guid>
       <description>Wprowadzenie Ten samouczek pokaże Ci, jak stworzyć prosty motyw w Hugo. Zakładam, że jesteś zaznajomiony z HTML, wierszem poleceń basha i że dobrze jest używać Markdown do formatowania treści. Wyjaśnię, w jaki sposób Hugo używa szablonów i jak możesz porządkować szablony, aby utworzyć motyw. Nie będę zajmował się używaniem CSS do stylizacji Twojego motywu.
 Zaczniemy od utworzenia nowej witryny z bardzo podstawowym szablonem. Następnie dodamy kilka stron i postów. Dzięki niewielkim zmianom możesz tworzyć wiele różnych typów stron internetowych.</description>
     </item>

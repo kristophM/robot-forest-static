@@ -2,111 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Robot Forest</title>
-    <link>robotforest.io/categories/</link>
+    <link>https://robotforest.io/categories/</link>
     <description>Recent content in Categories on Robot Forest</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="robotforest.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robotforest.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>robotforest.io/categories/</link>
+      <link>https://robotforest.io/categories/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>robotforest.io/categories/</guid>
+      <guid>https://robotforest.io/categories/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>robotforest.io/categories/markdown/</link>
+      <link>https://robotforest.io/categories/markdown/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>robotforest.io/categories/markdown/</guid>
+      <guid>https://robotforest.io/categories/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cheese</title>
-      <link>robotforest.io/categories/cheese/</link>
+      <link>https://robotforest.io/categories/cheese/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>robotforest.io/categories/cheese/</guid>
+      <guid>https://robotforest.io/categories/cheese/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>robotforest.io/categories/hugo/</link>
+      <link>https://robotforest.io/categories/hugo/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>robotforest.io/categories/hugo/</guid>
+      <guid>https://robotforest.io/categories/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>robotforest.io/categories/go/</link>
+      <link>https://robotforest.io/categories/go/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>robotforest.io/categories/go/</guid>
+      <guid>https://robotforest.io/categories/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>robotforest.io/categories/machine-learning/</link>
+      <link>https://robotforest.io/categories/machine-learning/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>robotforest.io/categories/machine-learning/</guid>
+      <guid>https://robotforest.io/categories/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pandas</title>
-      <link>robotforest.io/categories/pandas/</link>
+      <link>https://robotforest.io/categories/pandas/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>robotforest.io/categories/pandas/</guid>
+      <guid>https://robotforest.io/categories/pandas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>robotforest.io/categories/python/</link>
+      <link>https://robotforest.io/categories/python/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>robotforest.io/categories/python/</guid>
+      <guid>https://robotforest.io/categories/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scikit Learn</title>
-      <link>robotforest.io/categories/scikit-learn/</link>
+      <link>https://robotforest.io/categories/scikit-learn/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>robotforest.io/categories/scikit-learn/</guid>
+      <guid>https://robotforest.io/categories/scikit-learn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seaborn</title>
-      <link>robotforest.io/categories/seaborn/</link>
+      <link>https://robotforest.io/categories/seaborn/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>robotforest.io/categories/seaborn/</guid>
+      <guid>https://robotforest.io/categories/seaborn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jekyll</title>
-      <link>robotforest.io/categories/jekyll/</link>
+      <link>https://robotforest.io/categories/jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>robotforest.io/categories/jekyll/</guid>
+      <guid>https://robotforest.io/categories/jekyll/</guid>
       <description></description>
     </item>
     

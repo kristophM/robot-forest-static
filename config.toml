@@ -1,4 +1,4 @@
-baseurl                 = "robotforest.io"
+baseurl                 = "https://robotforest.io/"
 DefaultContentLanguage  = "en"
 title                   = "Robot Forest"
 theme                   = "hugo-future-imperfect-slim"
