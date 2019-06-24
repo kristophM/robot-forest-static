@@ -32,14 +32,14 @@ publishDir              = "docs"
 
   [params.meta]
     # Sets the meta tag description
-    description         = "Machine Learning For Web Developers"
+    description         = "Machine Learning For Full-Stack Developers"
     # Sets the meta tag author
-    author              = "Kristoph Matthews, RobotForest"
+    author              = "RobotForest"
     # If you would like to add more comprehensive favicon support passed root
     # directory favicon.ico, utlize this funtion. It is recommened to use
     # https://realfavicongenerator.net to generate your icons as that is the basis
     # for the theme's naming.
-    favicon             = false # TODO
+    favicon             = true
     svg                 = true
     faviconVersion      = "1"
     msColor             = "#ffffff" # Copy from the https://realfavicongenerator.net
@@ -47,7 +47,7 @@ publishDir              = "docs"
 
   [params.header]
     # Sets the navbarTitle that appears in the top left of the navigation bar
-    navbarTitle         = "Robot Forest"
+    navbarTitle         = "RobotForest.io"
     # Sets navbarTitle to match the section of the website
     dynamicTitles       = true
     searchMenu          = true
@@ -57,18 +57,18 @@ publishDir              = "docs"
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
   [params.intro]
-    header                = "Robot Forest"
-    paragraph             = "Machine Learning For Web Developers"
-    rssIntro              = true
-    socialIntro           = true
+    header                = "Fast & Fun Machine Learning for Full-Stack Developers"
+    paragraph             = ""
+    rssIntro              = false
+    socialIntro           = false
 
     # This appears at the top of the sidebar above params.intro.header.
     # A width of less than 100px is recommended from a design perspective.
     [params.intro.pic]
-      src                 = "/img/main/logo.jpg" # TODO
+      src                 = "/img/main/robot-forest-logo-white@2x.png"
       # Masks image in a certain shape. Supported are circle, triangle, diamond, and hexagon.
       shape               = "circle"
-      width               = ""
+      width               = "200"
       alt                 = "Robot Forest Machine Learning"
 
   [params.sidebar]
@@ -148,7 +148,7 @@ publishDir              = "docs"
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github                = "pacollins/hugo-future-imperfect-slim"
+  # github                = "pacollins/hugo-future-imperfect-slim"
   gitlab                = ""
   stackoverflow         = "" # User Number
   bitbucket             = ""
@@ -156,22 +156,22 @@ publishDir              = "docs"
   codepen               = ""
   # Visual Art Communities
   deviantart            = ""
-  flickr                = "example"
+  # flickr                = "example"
   behance               = ""
   dribbble              = ""
   # Publishing Communities
   wordpress             = ""
   medium                = ""
   # Professional/Business Oriented Communities
-  linkedin              = "example"
-  linkedin_company      = "examplebusiness"
+  # linkedin              = "example"
+  # linkedin_company      = "examplebusiness"
   foursquare            = ""
   xing                  = ""
   slideshare            = ""
   # Social Networks
-  facebook              = "example"
+  # facebook              = "example"
   googleplus            = ""
-  reddit                = "example"
+  # reddit                = "example"
   quora                 = ""
   youtube               = ""
   vimeo                 = ""
@@ -179,16 +179,16 @@ publishDir              = "docs"
     # WeChat and QQ need testing.
     wechat              = ""
     qq                  = "" # User ID Number
-  instagram             = "example"
+  # instagram             = "example"
   tumblr                = ""
-  twitter               = "example"
+  # twitter               = "example"
   skype                 = ""
   snapchat              = ""
-  pinterest             = "example"
-  telegram              = "example"
+  # pinterest             = "example"
+  # telegram              = "example"
   vine                  = ""
   googlescholar         = ""
   orcid                 = ""
-  researchgate          = "example"
+  # researchgate          = "example"
   # Email
-  email                 = "example"
+  email                 = "hello@robotforest.io"
