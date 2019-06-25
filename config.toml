@@ -16,7 +16,7 @@ publishDir              = "docs"
   # multiple/additional files if necessary. The standard theme files can be loaded
   # by adding the value, "default". Default includes the add-on.css and and-on.js.
   # Example: ["default", "/path/to/file"]
-  cssFiles              = ["default"]
+  cssFiles              = ["default", "css/custom.css"]
   jsFiles               = ["default"]
   # Sets options for highlight.js
   highlightjs           = true

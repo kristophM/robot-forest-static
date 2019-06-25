@@ -3,7 +3,7 @@
     {{ $currPage := .Page }}
     {{range $.Site.Params.nav.tutorialCategories}}
       {{$category := .}}
-      <div class="tutorial-section-header">
+      <div class="tutorial-section-header {{if eq $currPage.Params.category $category.category_name}}active{{end}}">
         {{$v1 := where ($.Site.Pages.ByParam "sort_key") "Section" "tutorials"}}
         {{$v2 := where ($.Site.Pages.ByParam "sort_key") "Params.category" $category.category_name}}
         {{range first 1 ($v1 | intersect $v2)}}
@@ -17,7 +17,7 @@
             {{range (where ($.Site.Pages.ByParam "sort_key") "Section" "tutorials") }}
             {{$page := .}}
             {{ if eq $page.Params.category $category.category_name }}
-            <li>
+            <li class="{{if eq $page.Permalink $currPage.Permalink}}active{{end}}">
               <a href="{{$page.Permalink}}">
                 {{.Title}}
               </a>
