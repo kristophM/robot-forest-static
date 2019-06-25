@@ -30,6 +30,16 @@ publishDir              = "docs"
   # Options are twitter, facebook, reddit, linkedin, stumbleupon, pinterest, email
   socialShare           = ["twitter", "reddit", "email"]
 
+  [params.nav]
+    tutorialCategories = [
+      {name = "Learn Python for Data Science", category_name = "Python", folder = "python"},
+      {name = "Learn Pandas", category_name = "Pandas", folder = "pandas"},
+      {name = "Learn Seaborn", category_name = "Seaborn", folder = "seaborn"},
+      {name = "Learn ML", category_name = "ML", folder = "machine_learning"},
+      {name = "Learn SciKit Learn", category_name = "SciKit Learn", folder = "sklearn"},
+      {name = "Learn TensorFlow", category_name = "TensorFlow", folder = "tensorflow"}
+    ]
+
   [params.meta]
     # Sets the meta tag description
     description         = "Machine Learning For Full-Stack Developers"

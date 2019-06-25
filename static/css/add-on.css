@@ -4,3 +4,7 @@
   is an official part of the theme (ex. Pull Requests) should be included in main.css
   and follow the formatting and style given.
 */
+#tutorials {
+  background: white;
+  padding: 20px;
+}
