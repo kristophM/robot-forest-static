@@ -1,0 +1,30 @@
+#tutorials {
+  background: white;
+  padding-top: 0px;
+}
+.tutorial-section-header {
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.tutorial-section-header a {
+  border-bottom: none;
+}
+
+.tutorial-section-header.active {
+  background: lavender;
+}
+
+#tutorials ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+#tutorials ul li {
+  padding: 10px 20px;
+}
+#tutorials ul li.active {
+  font-weight: 600;
+}
