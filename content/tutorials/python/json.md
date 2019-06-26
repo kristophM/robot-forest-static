@@ -5,5 +5,18 @@ draft: true
 sort_key: 18
 category: "Python"
 ---
+# Python JSON
+
+Python includes a built-in module called `json` that can be used to work with JSON
+data.
+
+## Parsing JSON
+
+## Converting Dictionaries to JSON
+
+### Formatting JSON strings
+"Pretty Print"
+
+
 
 Dig

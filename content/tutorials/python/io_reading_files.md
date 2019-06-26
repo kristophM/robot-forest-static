@@ -5,3 +5,6 @@ draft: true
 sort_key: 24
 category: "Python"
 ---
+# Python Reading Files
+
+Once you've opened a file, you may read it using Python's built-in `read()` function.

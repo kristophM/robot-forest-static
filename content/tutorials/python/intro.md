@@ -18,6 +18,8 @@ Versions 2, 3
 
 * Duct typed
 
+* Object oriented, but with strong functional programming? 
+
 # Why is Python good for ML
 
 * A plethora of math-oriented libraries

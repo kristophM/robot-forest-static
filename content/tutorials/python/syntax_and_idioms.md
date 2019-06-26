@@ -22,7 +22,7 @@ or do/end (Ruby).
 * **Preference for snake case:** Variable and function names with multiple words
 prefer "snake casing" (similar to Ruby), compared to the "camel casing" found in
 most other languages (Javascript, C++, Java). Classes should be in Pascal Case, and
-constants should be in upper snake case. 
+constants should be in upper snake case.
 
 * **No semicolons needed:** End of line statements do NOT need to be terminated by
 colons. If you want to have multiple statements on the same line however, you
@@ -46,6 +46,8 @@ will help speed up your programming as well.
 
 * **Chained comparison operators:** Be wary of putting too many logical operators
 (AND, OR) in your conditional statements.
+
+* **Underscores:** Fill this in 
 
 * **Use Falsy & Truthy:**
 

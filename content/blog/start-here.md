@@ -1,5 +1,5 @@
 +++
-author = "Hugo Future Imperfect Slim"
+author = "Kristoph Matthews"
 categories = ["Markdown"]
 date = "2019-01-01"
 description = "Markdown and Shortcode Examples"
@@ -7,7 +7,7 @@ featured = ""
 featuredalt = ""
 featuredpath = ""
 linktitle = ""
-title = "Markdown and Shortcodes"
+title = "New? Start Here"
 type = "post"
 
 +++

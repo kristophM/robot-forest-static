@@ -23,6 +23,7 @@ doesn't ship with native support for arrays, but lists work fine for most
 applications.
 
 Difference between lists and arrays. See [numPy] for more info on arrays.
+https://www.pythoncentral.io/the-difference-between-a-list-and-an-array/
 
 When are they most useful?
 
@@ -31,7 +32,7 @@ When are they most useful?
 ## Accessing Values or Slices
 0, [-1]
 
-## Iterate Through a List 
+## Iterate Through a List
 
 ## Pushing and Popping a List
 
@@ -42,3 +43,5 @@ len
 sort
 sort by
 checking if arrays overlap
+
+See https://www.w3schools.com/python/python_arrays.asp

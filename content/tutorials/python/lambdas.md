@@ -1,7 +1,13 @@
 ---
 title: "Lambdas"
-date: 2019-06-23T22:20:30-04:00
+date: 2019-06-23T22:20:25-04:00
 draft: true
-sort_key: 16
+sort_key: 15
 category: "Python"
 ---
+
+# Python Lambdas
+
+## Syntax
+
+## When to Use Lambdas 

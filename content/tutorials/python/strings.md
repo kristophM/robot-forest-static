@@ -10,6 +10,16 @@ category: "Python"
 ## Declaring Strings
 
 ## Interpolating Strings
+https://www.w3schools.com/python/python_string_formatting.asp
+
+### Multiple Values
+
+### Formatting Numbers
+
+### Index Numbers
+
+### Named Indices
+
 
 ## Useful String Functions
 
