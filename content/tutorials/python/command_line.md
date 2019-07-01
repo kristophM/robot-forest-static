@@ -26,13 +26,23 @@ If you would like to communicate with the operating system, read/write files, an
 run programs from the shell, it's possible to run shell commands directly from
 Python, using the built-in `subprocess` module.
 
-[Example]
+```python
+bashCommand = "ls" # A unix shell command for listing the contents of a directory
+import subprocess
+process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
+output, error = process.communicate()
+```
 
-https://stackoverflow.com/questions/4256107/running-bash-commands-in-python
+The `output` variable above, if the command was successful, stores the output
+of the command. Otherwise, the error variable stores the error output.
 
 ## Prompt User Input From the Command Line
 
 Prompting user input is as simple as using the `input()` function. Suppose you
 want to ask the user their name before continuing through the rest of the script:
 
-[Example ]
+```python
+print("How much would you like to withdraw?")
+amt = input()
+print("Here is $", amt)
+```

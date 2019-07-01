@@ -20,8 +20,63 @@ The `finally` block executes no matter what, at the end of the try-except block.
 
 ## Handle the Exception
 
+If you suspect a block of code has a chance of failing, wrap the code in a _try...except_
+block.
+
+```python
+try:
+  5/0
+except:
+  print("an error occurred")
+```
+
+If you can further anticipate certain types of exceptions and wish to handle them
+in a specialized manner vs other exceptions, you can name them explicitly:
+
+```python
+try:
+  5/0
+except ZeroDivisionError:
+  print("you cannot divide by zero!")
+```
+
 ## Handle Multiple Exceptions
+
+If you anticipate *multiple* types of errors ocurring, you can handle them all
+separately:
+
+```python
+try:
+  c = a / b
+except ZeroDivisionError:
+  print("you cannot divide by zero")
+except NameError:
+  print("are you sure you've defined your variables?")
+```
 
 ## Else
 
-## Finally 
+You can also specify a block of code to execute ONLY if there were no errors.
+
+```python
+try:
+  c = 5 // 2
+except ZeroDivisionError:
+  print("you cannot divide by zero")
+else:
+  print("everything good")
+```
+
+## Finally
+
+You can add `finally` to ensure that certain code executes regardless of success
+or failure.
+
+```python
+try:
+  c = 5 // 0
+except ZeroDivisionError:
+  print("you cannot divide by zero")
+finally:
+  print("ok let's get on with it!")
+```

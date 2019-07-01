@@ -12,21 +12,26 @@ category: "Python"
 Python variables are created as soon as you define them and don't need to be
 initialized, nor do their types need to be specified.
 
-[Put these as 'REPLS']?
-
 ```python
 num_apples = 5 # initialized automatically as type "int"
 greeting = 'Hallo' # initialized automatically as type string?
 avg = 6.4 # initialized automatically as type float?
 print(num_apples, greeting, avg)
-# TODO: put in print typeof to verify
 ```
 
 ### Tip: Determine the type of a variable
 
-Use `type()`
+Use `type()` to determine the type (or class) of a variable.
 
-### Tip: Escaping quotes and other characters
+```python
+x = 5
+y = "Hallo"
+z = 2e6
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
 
 ## Variable Name Rules
 
@@ -37,9 +42,3 @@ Variables in Python have the following rules:
 * They must contain only alphanumeric characters and underscores
 
 * They are case sensitive
-
-[Examples]
-
-## Multiple Assignments
-
-[Fill in]

@@ -2,23 +2,27 @@
 title: "Intro"
 date: 2019-06-25T22:35:32-04:00
 draft: true
-sort_key: 0.5
+sort_key: 0
 category: "Python"
 ---
 
+{{<figure src="/img/tutorials/python_logo.png" class="tutorial-header-logo">}}
+
 # Background
 
-Invented by:
+Invented by: Guido van Rossum
 
-Versions 2, 3
+Python has two principle versions: 2 and 3. Both are widely used today and it's
+important to note which version is used in whatever software you're looking at.
+These tutorials will feature the more modern Version 3.
 
 # Characteristics
 
 * Interpreted
 
-* Duct typed
+* Duck-typed
 
-* Object oriented, but with strong functional programming? 
+* Object oriented, but with support for functional programming
 
 # Why is Python good for ML
 
@@ -26,4 +30,4 @@ Versions 2, 3
 
 * Terse, readable syntax
 
-* Jupyter Notebooks
+* Jupyter Notebooks for data visualization

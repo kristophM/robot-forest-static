@@ -25,10 +25,12 @@ If the output shows a version, you have Python installed. If not, follow the ste
 
 ## Anaconda method (recommended)
 
-Anaconda is a ______. It comes with a suite of tools for data science so it's
+Anaconda is a framework and package manager for Python with an emphasis on solutions
+for data scientists. It comes with a suite of tools for data science so it's
 recommended if you're going to be using Python for machine learning and data science.
 Furthermore, Anaconda has its `conda` package manager and the ability to set
-environment variables. Learn more about Anaconda and package managers [here].
+environment variables. Learn more about Anaconda and package managers
+[here](https://www.anaconda.com/).
 
 ## Homebrew (Mac)
 
@@ -40,10 +42,10 @@ brew install python3
 
 ## Download (Linux/Windows/Mac)
 
-Go to [Python.org] and follow the instructions for installing Python.
+Go to [Python.org](https://www.python.org/) and follow the instructions for installing Python.
 
 # Hello World
 
 The "Hello World" app in Python is really simple.
 
-[Embed Hello World for Python here]
+<iframe height="400px" width="100%" src="https://repl.it/@robotforest/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
