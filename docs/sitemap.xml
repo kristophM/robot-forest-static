@@ -3,48 +3,185 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://robotforest.io/blog/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://robotforest.io/categories/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://robotforest.io/categories/markdown/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://robotforest.io/blog/examples/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    <loc>https://robotforest.io/tutorials/python/loops/</loc>
+    <lastmod>2019-06-26T22:20:08-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://robotforest.io/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-26T22:20:08-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robotforest.io/blog/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>https://robotforest.io/tutorials/</loc>
+    <lastmod>2019-06-26T22:20:08-04:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robotforest.io/categories/hugo/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://robotforest.io/tutorials/python/intro/</loc>
+    <lastmod>2019-06-25T22:35:32-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/numpy/getting_started/</loc>
+    <lastmod>2019-06-23T22:46:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/io_deleting_files/</loc>
+    <lastmod>2019-06-23T22:38:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/io_creating_and_writing_to_files/</loc>
+    <lastmod>2019-06-23T22:38:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/io_reading_files/</loc>
+    <lastmod>2019-06-23T22:38:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/io_file_handling/</loc>
+    <lastmod>2019-06-23T22:38:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/error_handling/</loc>
+    <lastmod>2019-06-23T22:35:56-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/command_line/</loc>
+    <lastmod>2019-06-23T22:35:32-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/package_management/</loc>
+    <lastmod>2019-06-23T22:34:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/regex/</loc>
+    <lastmod>2019-06-23T22:33:32-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/json/</loc>
+    <lastmod>2019-06-23T22:33:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/modules/</loc>
+    <lastmod>2019-06-23T22:33:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/dates/</loc>
+    <lastmod>2019-06-23T22:29:20-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/iterators/</loc>
+    <lastmod>2019-06-23T22:20:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/classes_and_objects/</loc>
+    <lastmod>2019-06-23T22:20:25-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/functions/</loc>
+    <lastmod>2019-06-23T22:20:25-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/inheritance_and_polymorphism/</loc>
+    <lastmod>2019-06-23T22:20:25-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/lambdas/</loc>
+    <lastmod>2019-06-23T22:20:25-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/control_flow/</loc>
+    <lastmod>2019-06-23T22:20:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/dictionaries/</loc>
+    <lastmod>2019-06-23T22:19:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/sets/</loc>
+    <lastmod>2019-06-23T22:05:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/tuples/</loc>
+    <lastmod>2019-06-23T22:05:20-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/lists/</loc>
+    <lastmod>2019-06-23T22:05:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/operators/</loc>
+    <lastmod>2019-06-23T22:04:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/strings/</loc>
+    <lastmod>2019-06-23T22:04:38-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/type_casting/</loc>
+    <lastmod>2019-06-23T22:04:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/data_types/</loc>
+    <lastmod>2019-06-23T22:04:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/variables/</loc>
+    <lastmod>2019-06-23T22:04:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/syntax_and_idioms/</loc>
+    <lastmod>2019-06-23T22:03:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/printing_and_comments/</loc>
+    <lastmod>2019-06-23T22:02:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/tutorials/python/getting_started/</loc>
+    <lastmod>2019-06-23T22:02:08-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://robotforest.io/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robotforest.io/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

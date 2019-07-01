@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Printing and Comments - Robot Forest</title>
+<meta name="description" content="Machine Learning For Full-Stack Developers">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
+  
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <meta name="generator" content="Hugo 0.55.6" />
+  
+<meta itemprop="name" content="Printing and Comments">
+<meta itemprop="description" content="Printing Strings Print statements use the print() command. In Python 3 and later, print must accept arguments in parentheses.
+You may put as many arguments as you&rsquo;d like, separated by commas.
+print(&#39;Hey&#39;) print(&#39;Hello&#39;, &#39;Hallo&#39;, &#39;Hola&#39;)  Printing Interpolated Strings To insert content directly into strings, you can use the format method and utilize brackets as placeholders.
+str = &quot;The {} train is running with delays.&quot; print(str.format(7)) # You can have multiple placeholders in a string.">
+
+
+<meta itemprop="datePublished" content="2019-06-23T22:02:57-04:00" />
+<meta itemprop="dateModified" content="2019-06-23T22:02:57-04:00" />
+<meta itemprop="wordCount" content="164">
+
+
+
+<meta itemprop="keywords" content="" />
+
+  <meta property="og:title" content="Printing and Comments" />
+<meta property="og:description" content="Printing Strings Print statements use the print() command. In Python 3 and later, print must accept arguments in parentheses.
+You may put as many arguments as you&rsquo;d like, separated by commas.
+print(&#39;Hey&#39;) print(&#39;Hello&#39;, &#39;Hallo&#39;, &#39;Hola&#39;)  Printing Interpolated Strings To insert content directly into strings, you can use the format method and utilize brackets as placeholders.
+str = &quot;The {} train is running with delays.&quot; print(str.format(7)) # You can have multiple placeholders in a string." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://robotforest.io/tutorials/python/printing_and_comments/" />
+<meta property="article:published_time" content="2019-06-23T22:02:57-04:00"/>
+<meta property="article:modified_time" content="2019-06-23T22:02:57-04:00"/>
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Printing and Comments"/>
+<meta name="twitter:description" content="Printing Strings Print statements use the print() command. In Python 3 and later, print must accept arguments in parentheses.
+You may put as many arguments as you&rsquo;d like, separated by commas.
+print(&#39;Hey&#39;) print(&#39;Hello&#39;, &#39;Hallo&#39;, &#39;Hola&#39;)  Printing Interpolated Strings To insert content directly into strings, you can use the format method and utilize brackets as placeholders.
+str = &quot;The {} train is running with delays.&quot; print(str.format(7)) # You can have multiple placeholders in a string."/>
+
+  
+
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
+  
+    
+      <link rel="stylesheet" href="/css/normalize.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+      <link rel="stylesheet" href="/css/main.min.css">
+      <link rel="stylesheet" href="/css/add-on.css">
+    
+  
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+  
+  
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/">
+        
+          
+            tutorials
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        <a href="/" class="link"><i class="fas fa-home">&nbsp;</i>Home</a>
+      
+        <a href="/about/" class="link"><i class="far fa-id-card">&nbsp;</i>About</a>
+      
+        <a href="/blog/" class="link"><i class="far fa-newspaper">&nbsp;</i>Blog</a>
+      
+        <a href="/categories/" class="link"><i class="fas fa-sitemap">&nbsp;</i>Categories</a>
+      
+        <a href="/contact/" class="link"><i class="far fa-envelope">&nbsp;</i>Contact</a>
+      
+      
+      
+
+    </menu>
+    
+
+    
+    
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro">
+  <a href="/"><img src="/img/main/robot-forest-logo-white@2x.png" class="circle" width="200" alt="Robot Forest Machine Learning" /></a>
+  <header>
+    <h1>Fast & Fun Machine Learning for Full-Stack Developers</h1>
+  </header>
+  <main>
+    
+  </main>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+            
+            <header>
+  <div class="title">
+    
+      <h1><a href="/tutorials/python/printing_and_comments/">Printing and Comments</a></h1>
+      
+    
+    
+  </div>
+</header>
+
+            <div id="content">
+                
+
+<h1 id="printing-strings">Printing Strings</h1>
+
+<p>Print statements use the <code>print()</code> command. In Python 3 and later, <code>print</code>
+must accept arguments in parentheses.</p>
+
+<p>You may put as many arguments as you&rsquo;d like, separated by commas.</p>
+
+<pre><code class="language-python">print('Hey')
+print('Hello', 'Hallo', 'Hola')
+</code></pre>
+
+<h2 id="printing-interpolated-strings">Printing Interpolated Strings</h2>
+
+<p>To insert content directly into strings, you can use the <code>format</code> method and utilize
+brackets as placeholders.</p>
+
+<pre><code class="language-python">str = &quot;The {} train is running with delays.&quot;
+print(str.format(7))
+
+# You can have multiple placeholders in a string.
+str = &quot;The {} train is running with delays. Use the {} train instead&quot;
+print(str.format('6', '4 or 5'))
+
+# Placeholders can also be named.
+str = &quot;The {train} train is running with delays. The delay is {delay_time} minutes.&quot;
+print(str.format(delay_time=10, train='A'))
+# Note that named placeholders don't need to be called in order.
+</code></pre>
+
+<h1 id="creating-comments">Creating Comments</h1>
+
+<p>Comments in Python are created by beginning your text with a &ldquo;#&rdquo; character. You
+may start the line with a &ldquo;#&rdquo; or start a comment at the end of the line.</p>
+
+<pre><code class="language-python"># This is a comment.
+</code></pre>
+
+            </div>
+        </article>
+      </main>
+      <section id="site-sidebar">
+  <section id="tutorials">
+    
+    
+      
+      <div class="tutorial-section-header active">
+        
+        
+        
+          
+          <a href="https://robotforest.io/tutorials/python/intro/">Learn Python for Data Science</a>
+        
+      </div>
+      
+        
+          <ul>
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/intro/">
+                Intro
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/getting_started/">
+                Getting Started
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="active">
+              <a href="https://robotforest.io/tutorials/python/printing_and_comments/">
+                Printing and Comments
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/syntax_and_idioms/">
+                Syntax And Idioms
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/variables/">
+                Variables
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/data_types/">
+                Data Types
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/strings/">
+                Strings
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/type_casting/">
+                Type Casting
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/operators/">
+                Operators
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/lists/">
+                Lists
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/tuples/">
+                Tuples
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/sets/">
+                Sets
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/dictionaries/">
+                Dictionaries
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/dates/">
+                Dates
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/control_flow/">
+                Control Flow
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/loops/">
+                Python Loops
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/classes_and_objects/">
+                Classes and Objects
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/functions/">
+                Functions
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/inheritance_and_polymorphism/">
+                Inheritance and Polymorphism
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/lambdas/">
+                Lambdas
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/iterators/">
+                Iterators
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/modules/">
+                Modules
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/json/">
+                JSON
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/regex/">
+                Regex
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/package_management/">
+                Package Management
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/command_line/">
+                Command Line
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/error_handling/">
+                Error Handling
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/io_file_handling/">
+                IO: File Handling
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/io_reading_files/">
+                IO: Reading Files
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/io_deleting_files/">
+                IO: Deleting Files
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/io_creating_and_writing_to_files/">
+                IO: Writing Files
+              </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+          </ul>
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+  </section>
+  <section id="recent-posts">
+    <header>
+      <h1>Recent posts</h1>
+    </header>
+    
+    
+  </section>
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  <section id="mini-bio">
+    <header>
+      <h1>About</h1>
+    </header>
+    <p>Fill Me In.</p>
+    <footer>
+      <a href="/about" class="button">Learn More</a>
+    </footer>
+  </section>
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="social-icons">
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:hello@robotforest.io" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2019
+      
+        Robot Forest
+      
+    .
+    Powered by <a href="//gohugo.io" target="_blank" rel="noopener">Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/javascript.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src=/js/util.js></script>
+  <script src=/js/main.js></script>
+  <script src=/js/add-on.js></script>
+  
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-142123167-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    </div>
+  </body>
+</html>

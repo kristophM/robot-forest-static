@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Lists - Robot Forest</title>
+<meta name="description" content="Machine Learning For Full-Stack Developers">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
+  
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <meta name="generator" content="Hugo 0.55.6" />
+  
+<meta itemprop="name" content="Lists">
+<meta itemprop="description" content="Python Collections Python allows for 4 types of collections: list, tuple, set, and dictionary.
+    Ordered? Can change values? Allows duplicates?     List Yes Yes Yes   Tuple Yes No Yes   Set No No No   Dictionary No Yes No    Lists Lists are ordered collections of values, which can be changed. Python doesn&rsquo;t ship with native support for arrays, but lists work fine for most applications.">
+
+
+<meta itemprop="datePublished" content="2019-06-23T22:05:08-04:00" />
+<meta itemprop="dateModified" content="2019-06-23T22:05:08-04:00" />
+<meta itemprop="wordCount" content="628">
+
+
+
+<meta itemprop="keywords" content="" />
+
+  <meta property="og:title" content="Lists" />
+<meta property="og:description" content="Python Collections Python allows for 4 types of collections: list, tuple, set, and dictionary.
+    Ordered? Can change values? Allows duplicates?     List Yes Yes Yes   Tuple Yes No Yes   Set No No No   Dictionary No Yes No    Lists Lists are ordered collections of values, which can be changed. Python doesn&rsquo;t ship with native support for arrays, but lists work fine for most applications." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://robotforest.io/tutorials/python/lists/" />
+<meta property="article:published_time" content="2019-06-23T22:05:08-04:00"/>
+<meta property="article:modified_time" content="2019-06-23T22:05:08-04:00"/>
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Lists"/>
+<meta name="twitter:description" content="Python Collections Python allows for 4 types of collections: list, tuple, set, and dictionary.
+    Ordered? Can change values? Allows duplicates?     List Yes Yes Yes   Tuple Yes No Yes   Set No No No   Dictionary No Yes No    Lists Lists are ordered collections of values, which can be changed. Python doesn&rsquo;t ship with native support for arrays, but lists work fine for most applications."/>
+
+  
+
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
+  
+    
+      <link rel="stylesheet" href="/css/normalize.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+      <link rel="stylesheet" href="/css/main.min.css">
+      <link rel="stylesheet" href="/css/add-on.css">
+    
+  
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+  
+  
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/">
+        
+          
+            tutorials
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        <a href="/" class="link"><i class="fas fa-home">&nbsp;</i>Home</a>
+      
+        <a href="/about/" class="link"><i class="far fa-id-card">&nbsp;</i>About</a>
+      
+        <a href="/blog/" class="link"><i class="far fa-newspaper">&nbsp;</i>Blog</a>
+      
+        <a href="/categories/" class="link"><i class="fas fa-sitemap">&nbsp;</i>Categories</a>
+      
+        <a href="/contact/" class="link"><i class="far fa-envelope">&nbsp;</i>Contact</a>
+      
+      
+      
+
+    </menu>
+    
+
+    
+    
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro">
+  <a href="/"><img src="/img/main/robot-forest-logo-white@2x.png" class="circle" width="200" alt="Robot Forest Machine Learning" /></a>
+  <header>
+    <h1>Fast & Fun Machine Learning for Full-Stack Developers</h1>
+  </header>
+  <main>
+    
+  </main>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+            
+            <header>
+  <div class="title">
+    
+      <h1><a href="/tutorials/python/lists/">Lists</a></h1>
+      
+    
+    
+  </div>
+</header>
+
+            <div id="content">
+                
+
+<h1 id="python-collections">Python Collections</h1>
+
+<p>Python allows for 4 types of collections: <em>list</em>, <em>tuple</em>, <em>set</em>, and <em>dictionary</em>.</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Ordered?</th>
+<th>Can change values?</th>
+<th>Allows duplicates?</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>List</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Tuple</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Set</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>Dictionary</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="lists">Lists</h1>
+
+<p>Lists are <em>ordered</em> collections of values, which can be changed. Python
+doesn&rsquo;t ship with native support for arrays, but lists work fine for most
+applications.</p>
+
+<p>NOTE: In Python, lists are what most people think of arrays in other languages (Javascript,
+Ruby, etc.), but arrays (in Python) have a more mathematical definition. For example,
+if you multiplied <code>3</code> by an <em>array</em> of <code>[1, 2, 3]</code>, you would get <code>[1, 6, 9]</code>. But
+if you tried the same operation with a <em>list</em>, you would get an error. For more information
+on arrays in Python, take a look at the <a href="https://robotforest.io/tutorials/numpy/getting_started/">Numpy Section</a></p>
+
+<h2 id="creating-a-list">Creating a List</h2>
+
+<p>To create a list, just use square bracket (&rdquo;[]&ldquo;) notation.</p>
+
+<pre><code class="language-python"># Numerical list
+x = [4, 5, 6]
+print(x)
+# String list
+y = ['Marie', 'Hannes', 'Dirk']
+print(y)
+# List of mixed type
+z = ['apples', 345, 4.7e-2]
+print(z)
+</code></pre>
+
+<p>Note: Arrays can be of mixed type in Python!</p>
+
+<h2 id="accessing-values-or-slices">Accessing Values or Slices</h2>
+
+<p>To access a value of the list, use the bracket notation (&rdquo;[]&ldquo;) along with the index.
+Python lists are zero indexed as in most programming languages.</p>
+
+<pre><code class="language-python">x = [4, 50, 7.3]
+# Access the first element
+print(x[0])
+# Access the last element.
+print(x[-1])
+</code></pre>
+
+<p>To access a <em>slice</em> (or &ldquo;subsection&rdquo;), you also use the bracket notation and
+specify a range.</p>
+
+<pre><code class="language-python">x = [4, 50, 7.3, 9, 1, 0, 8]
+
+# The first 3 elements
+print(x[0:3])
+
+# Trick: You can leave out the zero for brevity
+print(x[:3])
+
+# The last 3 elements
+print(x[(len(x) - 3):])
+</code></pre>
+
+<h3 id="get-the-length-of-a-list">Get the length of a list</h3>
+
+<p>Use the <code>len()</code> function.</p>
+
+<pre><code class="language-python">x = [2, 4, 3]
+print(len(x))
+</code></pre>
+
+<h2 id="iterate-through-a-list">Iterate Through a List</h2>
+
+<p>Since lists are a form of <em>collection</em>, you may use a <em>for loop</em> to iterate through
+them.</p>
+
+<pre><code class="language-python">x = [2, 4, 3]
+for e in x:
+  print(e)
+</code></pre>
+
+<h2 id="pushing-and-popping-a-list">Pushing and Popping a List</h2>
+
+<p>To add or remove items to and from a list, you may use the <code>append()</code> and <code>pop()</code>
+methods.</p>
+
+<pre><code class="language-python">x = [2, 4, 9]
+print(&quot;List before changes: &quot;, x)
+
+# Append to array
+x.append(0)
+print(&quot;List after appending: &quot;, x)
+
+# Remove last value of array
+x.pop()
+print(&quot;List after popping off last value: &quot;, x)
+
+# Remove the first element of the array
+x.pop(0)
+print(&quot;List after popping off first value: &quot;, x)
+</code></pre>
+
+<h2 id="other-useful-list-functions">Other Useful List Functions</h2>
+
+<p>You may find that you frequently use these methods when working with lists in Python:</p>
+
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>append()</td>
+<td>Adds an element at the end of the list</td>
+</tr>
+
+<tr>
+<td>clear()</td>
+<td>Removes all the elements from the list</td>
+</tr>
+
+<tr>
+<td>copy()</td>
+<td>Returns a copy of the list</td>
+</tr>
+
+<tr>
+<td>count()</td>
+<td>Returns the number of elements with the specified value</td>
+</tr>
+
+<tr>
+<td>extend()</td>
+<td>Add the elements of a list (or any iterable), to the end of the current list</td>
+</tr>
+
+<tr>
+<td>index()</td>
+<td>Returns the index of the first element with the specified value</td>
+</tr>
+
+<tr>
+<td>insert()</td>
+<td>Adds an element at the specified position</td>
+</tr>
+
+<tr>
+<td>pop()</td>
+<td>Removes the element at the specified position</td>
+</tr>
+
+<tr>
+<td>remove()</td>
+<td>Removes the first item with the specified value</td>
+</tr>
+
+<tr>
+<td>reverse()</td>
+<td>Reverses the order of the list</td>
+</tr>
+
+<tr>
+<td>sort()</td>
+<td>Sorts the list</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="some-common-operations">Some Common Operations</h2>
+
+<p>Below are some additional operations with more advanced functionality.</p>
+
+<h3 id="sorting-by-a-function">Sorting by a function</h3>
+
+<pre><code class="language-python">x = [{&quot;a&quot;: 7, &quot;b&quot;: 5}, {&quot;a&quot;: 2, &quot;b&quot;: 5}, {&quot;a&quot;: 4.9, &quot;b&quot;: 0}]
+x.sort(key=lambda e: e[&quot;a&quot;])
+</code></pre>
+
+<h3 id="determining-what-values-two-arrays-have-in-common-overlap">Determining what values two arrays have in common (overlap)</h3>
+
+<p>Python does not have a built in method for this, but you can use the fact that <em>sets</em>
+in Python may not contain duplicate values, and use the <em>bitwise AND</em> operator to
+take the intersection of the two sets.</p>
+
+<pre><code class="language-python">x1 = [1, 3, 4, 6, 8]
+x2 = [1, 0, 4, 6.5, 9.]
+intersection = list(set(x1) &amp; set(x2))
+print(intersection)
+</code></pre>
+
+            </div>
+        </article>
+      </main>
+      <section id="site-sidebar">
+  <section id="tutorials">
+    
+    
+      
+      <div class="tutorial-section-header active">
+        
+        
+        
+          
+          <a href="https://robotforest.io/tutorials/python/intro/">Learn Python for Data Science</a>
+        
+      </div>
+      
+        
+          <ul>
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/intro/">
+                Intro
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/getting_started/">
+                Getting Started
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/printing_and_comments/">
+                Printing and Comments
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/syntax_and_idioms/">
+                Syntax And Idioms
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/variables/">
+                Variables
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/data_types/">
+                Data Types
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/strings/">
+                Strings
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/type_casting/">
+                Type Casting
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/operators/">
+                Operators
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="active">
+              <a href="https://robotforest.io/tutorials/python/lists/">
+                Lists
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/tuples/">
+                Tuples
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/sets/">
+                Sets
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/dictionaries/">
+                Dictionaries
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/dates/">
+                Dates
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/control_flow/">
+                Control Flow
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/loops/">
+                Python Loops
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/classes_and_objects/">
+                Classes and Objects
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/functions/">
+                Functions
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/inheritance_and_polymorphism/">
+                Inheritance and Polymorphism
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/lambdas/">
+                Lambdas
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/iterators/">
+                Iterators
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/modules/">
+                Modules
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/json/">
+                JSON
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/regex/">
+                Regex
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/package_management/">
+                Package Management
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/command_line/">
+                Command Line
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/error_handling/">
+                Error Handling
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/io_file_handling/">
+                IO: File Handling
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/io_reading_files/">
+                IO: Reading Files
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/io_deleting_files/">
+                IO: Deleting Files
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/io_creating_and_writing_to_files/">
+                IO: Writing Files
+              </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+          </ul>
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+  </section>
+  <section id="recent-posts">
+    <header>
+      <h1>Recent posts</h1>
+    </header>
+    
+    
+  </section>
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  <section id="mini-bio">
+    <header>
+      <h1>About</h1>
+    </header>
+    <p>Fill Me In.</p>
+    <footer>
+      <a href="/about" class="button">Learn More</a>
+    </footer>
+  </section>
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="social-icons">
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:hello@robotforest.io" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2019
+      
+        Robot Forest
+      
+    .
+    Powered by <a href="//gohugo.io" target="_blank" rel="noopener">Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/javascript.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src=/js/util.js></script>
+  <script src=/js/main.js></script>
+  <script src=/js/add-on.js></script>
+  
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-142123167-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    </div>
+  </body>
+</html>

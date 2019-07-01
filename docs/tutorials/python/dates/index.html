@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Dates - Robot Forest</title>
+<meta name="description" content="Machine Learning For Full-Stack Developers">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
+  
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <meta name="generator" content="Hugo 0.55.6" />
+  
+<meta itemprop="name" content="Dates">
+<meta itemprop="description" content="Python Dates and Time Dates and Time are a big topic in every language. Python does not consider dates and times to be native types but includes a built-in datetime module that can be imported.
+Creating a DateTime Object A datetime object is constructed by calling datetime with the year, month, and day as arguments. You can further specify hours, minutes, and seconds.
+import datetime bday = datetime.datetime(1912, 6, 23) print(&quot;Alan Turing&#39;s birthday was: &quot;, bday) lunch_appointment = datetime.">
+
+
+<meta itemprop="datePublished" content="2019-06-23T22:29:20-04:00" />
+<meta itemprop="dateModified" content="2019-06-23T22:29:20-04:00" />
+<meta itemprop="wordCount" content="583">
+
+
+
+<meta itemprop="keywords" content="" />
+
+  <meta property="og:title" content="Dates" />
+<meta property="og:description" content="Python Dates and Time Dates and Time are a big topic in every language. Python does not consider dates and times to be native types but includes a built-in datetime module that can be imported.
+Creating a DateTime Object A datetime object is constructed by calling datetime with the year, month, and day as arguments. You can further specify hours, minutes, and seconds.
+import datetime bday = datetime.datetime(1912, 6, 23) print(&quot;Alan Turing&#39;s birthday was: &quot;, bday) lunch_appointment = datetime." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://robotforest.io/tutorials/python/dates/" />
+<meta property="article:published_time" content="2019-06-23T22:29:20-04:00"/>
+<meta property="article:modified_time" content="2019-06-23T22:29:20-04:00"/>
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dates"/>
+<meta name="twitter:description" content="Python Dates and Time Dates and Time are a big topic in every language. Python does not consider dates and times to be native types but includes a built-in datetime module that can be imported.
+Creating a DateTime Object A datetime object is constructed by calling datetime with the year, month, and day as arguments. You can further specify hours, minutes, and seconds.
+import datetime bday = datetime.datetime(1912, 6, 23) print(&quot;Alan Turing&#39;s birthday was: &quot;, bday) lunch_appointment = datetime."/>
+
+  
+
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
+  
+    
+      <link rel="stylesheet" href="/css/normalize.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+      <link rel="stylesheet" href="/css/main.min.css">
+      <link rel="stylesheet" href="/css/add-on.css">
+    
+  
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+  
+  
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/">
+        
+          
+            tutorials
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        <a href="/" class="link"><i class="fas fa-home">&nbsp;</i>Home</a>
+      
+        <a href="/about/" class="link"><i class="far fa-id-card">&nbsp;</i>About</a>
+      
+        <a href="/blog/" class="link"><i class="far fa-newspaper">&nbsp;</i>Blog</a>
+      
+        <a href="/categories/" class="link"><i class="fas fa-sitemap">&nbsp;</i>Categories</a>
+      
+        <a href="/contact/" class="link"><i class="far fa-envelope">&nbsp;</i>Contact</a>
+      
+      
+      
+
+    </menu>
+    
+
+    
+    
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro">
+  <a href="/"><img src="/img/main/robot-forest-logo-white@2x.png" class="circle" width="200" alt="Robot Forest Machine Learning" /></a>
+  <header>
+    <h1>Fast & Fun Machine Learning for Full-Stack Developers</h1>
+  </header>
+  <main>
+    
+  </main>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+            
+            <header>
+  <div class="title">
+    
+      <h1><a href="/tutorials/python/dates/">Dates</a></h1>
+      
+    
+    
+  </div>
+</header>
+
+            <div id="content">
+                
+
+<h1 id="python-dates-and-time">Python Dates and Time</h1>
+
+<p>Dates and Time are a big topic in every language. Python does not consider dates
+and times to be native types but includes a built-in <code>datetime</code> module that can
+be imported.</p>
+
+<h2 id="creating-a-datetime-object">Creating a DateTime Object</h2>
+
+<p>A <code>datetime</code> object is constructed by calling <code>datetime</code> with the year, month, and
+day as arguments. You can further specify hours, minutes, and seconds.</p>
+
+<pre><code class="language-python">import datetime
+bday = datetime.datetime(1912, 6, 23)
+print(&quot;Alan Turing's birthday was: &quot;, bday)
+
+lunch_appointment = datetime.datetime(2022, 1, 17, 13, 0, 0)
+print(&quot;Our lunch appointment is for: &quot;, lunch_appointment)
+</code></pre>
+
+<p>NOTE: <code>datetime</code> objects are stored as &ldquo;timezone-unaware&rdquo; unless you specify
+a timezone.</p>
+
+<h3 id="current-datetime">Current DateTime</h3>
+
+<p>The current date and time can be obtained easily with the <code>now()</code> function.</p>
+
+<pre><code class="language-python">import datetime
+bday = datetime.datetime.now()
+print(&quot;The current date and time is: &quot;, bday)
+</code></pre>
+
+<h2 id="formatting-dates-and-times">Formatting Dates and Times</h2>
+
+<p>The above datetime objects print in quite a long and ugly format. If you would like to
+represent it in a more human readable format, you can use Python&rsquo;s built-in
+<code>strftime()</code> method (short for &ldquo;string format time&rdquo;). This method takes the given
+<code>datetime</code> and formats it according to whatever directives you pass in the string
+argument.</p>
+
+<pre><code class="language-python">import datetime
+d = datetime.datetime.now()
+
+yymmdd = d.strftime(&quot;%Y-%m-%d&quot;)
+day_of_week = d.strftime(&quot;%A&quot;)
+proper_english_date = d.strftime(&quot;%B %d, %Y&quot;)
+
+print(yymmdd)
+print(day_of_week)
+print(proper_english_date)
+</code></pre>
+
+<h3 id="directives-for-strftime">Directives for <code>strftime()</code></h3>
+
+<table>
+<thead>
+<tr>
+<th>Directive</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>%a</td>
+<td>Weekday, short version</td>
+<td>Wed</td>
+</tr>
+
+<tr>
+<td>%A</td>
+<td>Weekday, full version</td>
+<td>Wednesday</td>
+</tr>
+
+<tr>
+<td>%w</td>
+<td>Weekday as a number 0-6, 0 is Sunday</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>%d</td>
+<td>Day of month 01-31</td>
+<td>31</td>
+</tr>
+
+<tr>
+<td>%b</td>
+<td>Month name, short version</td>
+<td>Dec</td>
+</tr>
+
+<tr>
+<td>%B</td>
+<td>Month name, full version</td>
+<td>December</td>
+</tr>
+
+<tr>
+<td>%m</td>
+<td>Month as a number 01-12</td>
+<td>12</td>
+</tr>
+
+<tr>
+<td>%y</td>
+<td>Year, short version, without century</td>
+<td>18</td>
+</tr>
+
+<tr>
+<td>%Y</td>
+<td>Year, full version</td>
+<td>2018</td>
+</tr>
+
+<tr>
+<td>%H</td>
+<td>Hour 00-23</td>
+<td>17</td>
+</tr>
+
+<tr>
+<td>%I</td>
+<td>Hour 00-12</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>%p</td>
+<td>AM/PM</td>
+<td>PM</td>
+</tr>
+
+<tr>
+<td>%M</td>
+<td>Minute 00-59</td>
+<td>41</td>
+</tr>
+
+<tr>
+<td>%S</td>
+<td>Second 00-59</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>%f</td>
+<td>Microsecond 000000-999999</td>
+<td>548513</td>
+</tr>
+
+<tr>
+<td>%z</td>
+<td>UTC offset</td>
+<td>+0100</td>
+</tr>
+
+<tr>
+<td>%Z</td>
+<td>Timezone</td>
+<td>CST</td>
+</tr>
+
+<tr>
+<td>%j</td>
+<td>Day number of year 001-366</td>
+<td>365</td>
+</tr>
+
+<tr>
+<td>%U</td>
+<td>Week number of year, Sunday as the first day of week, 00-53</td>
+<td>52</td>
+</tr>
+
+<tr>
+<td>%W</td>
+<td>Week number of year, Monday as the first day of week, 00-53</td>
+<td>52</td>
+</tr>
+
+<tr>
+<td>%c</td>
+<td>Local version of date and time</td>
+<td>Mon Dec 31 17:41:00 2018</td>
+</tr>
+
+<tr>
+<td>%x</td>
+<td>Local version of date</td>
+<td>12/31/18</td>
+</tr>
+
+<tr>
+<td>%X</td>
+<td>Local version of time</td>
+<td>17:41:00</td>
+</tr>
+
+<tr>
+<td>%%</td>
+<td>A % character</td>
+<td>%</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="unix-date-time">Unix Date + Time</h2>
+
+<p>Unix time, also known as <em>epoch time</em>, is a number defined as the number of seconds
+since midnight on January 1, 1970. It is a simpler way to represent time and
+is often utilized on servers and databases to reduce ambiguity and simplify the
+data.</p>
+
+<pre><code class="language-python">import datetime
+d = datetime.datetime.now()
+unix_time = d.timestamp()
+print(&quot;no. of seconds since 1970&quot;, unix_time)
+
+d1971 = datetime.utcfromtimestamp(3600 * 24 * 365)
+print(&quot;One year after 1970: &quot;, d1971)
+</code></pre>
+
+<h2 id="dates-vs-date-time-vs-time">Dates vs. Date + Time vs. Time</h2>
+
+<p>It&rsquo;s important to understand the difference between dates and a date with a time.
+When someone mentions July 1st, 2018 as a date, it&rsquo;s unclear what <code>datetime</code>
+that would represent. Why? Because it can simultaneously be July 1st in, say,
+New York, and July 2nd in Berlin due to time zones.</p>
+
+<p>Thus, when storing datetime information in variables and databases using Python,
+it&rsquo;s a good practice to specify a timezone (preferably UTC) to eliminate ambiguity.</p>
+
+<pre><code class="language-python">from pytz import timezone
+import datetime
+d = datetime.datetime(2022, 12, 1, 13, 45, tzinfo=pytz.utc)
+print(d.isoformat())
+</code></pre>
+
+<h3 id="time">Time</h3>
+
+<p>Lastly, <em>time</em> as it pertains to Python describes the (local) time of day,
+independent of any particular day.</p>
+
+<pre><code class="language-python">from datetime import time
+lunch_time = time(12,30)
+print(lunch_time.isoformat())
+</code></pre>
+
+<p>Notice that the time printed is simply a time, and not tied to any particular day.</p>
+
+            </div>
+        </article>
+      </main>
+      <section id="site-sidebar">
+  <section id="tutorials">
+    
+    
+      
+      <div class="tutorial-section-header active">
+        
+        
+        
+          
+          <a href="https://robotforest.io/tutorials/python/intro/">Learn Python for Data Science</a>
+        
+      </div>
+      
+        
+          <ul>
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/intro/">
+                Intro
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/getting_started/">
+                Getting Started
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/printing_and_comments/">
+                Printing and Comments
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/syntax_and_idioms/">
+                Syntax And Idioms
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/variables/">
+                Variables
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/data_types/">
+                Data Types
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/strings/">
+                Strings
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/type_casting/">
+                Type Casting
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/operators/">
+                Operators
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/lists/">
+                Lists
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/tuples/">
+                Tuples
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/sets/">
+                Sets
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/dictionaries/">
+                Dictionaries
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="active">
+              <a href="https://robotforest.io/tutorials/python/dates/">
+                Dates
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/control_flow/">
+                Control Flow
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/loops/">
+                Python Loops
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/classes_and_objects/">
+                Classes and Objects
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/functions/">
+                Functions
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/inheritance_and_polymorphism/">
+                Inheritance and Polymorphism
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/lambdas/">
+                Lambdas
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/iterators/">
+                Iterators
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/modules/">
+                Modules
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/json/">
+                JSON
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/regex/">
+                Regex
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/package_management/">
+                Package Management
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/command_line/">
+                Command Line
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/error_handling/">
+                Error Handling
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/io_file_handling/">
+                IO: File Handling
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/io_reading_files/">
+                IO: Reading Files
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/io_deleting_files/">
+                IO: Deleting Files
+              </a>
+            </li>
+            
+            
+            
+            
+            <li class="">
+              <a href="https://robotforest.io/tutorials/python/io_creating_and_writing_to_files/">
+                IO: Writing Files
+              </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+          </ul>
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+      
+      <div class="tutorial-section-header ">
+        
+        
+        
+      </div>
+      
+        
+      
+    
+  </section>
+  <section id="recent-posts">
+    <header>
+      <h1>Recent posts</h1>
+    </header>
+    
+    
+  </section>
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  <section id="mini-bio">
+    <header>
+      <h1>About</h1>
+    </header>
+    <p>Fill Me In.</p>
+    <footer>
+      <a href="/about" class="button">Learn More</a>
+    </footer>
+  </section>
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="social-icons">
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:hello@robotforest.io" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2019
+      
+        Robot Forest
+      
+    .
+    Powered by <a href="//gohugo.io" target="_blank" rel="noopener">Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/javascript.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src=/js/util.js></script>
+  <script src=/js/main.js></script>
+  <script src=/js/add-on.js></script>
+  
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-142123167-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    </div>
+  </body>
+</html>
