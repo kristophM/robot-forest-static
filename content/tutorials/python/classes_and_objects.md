@@ -1,7 +1,7 @@
 ---
 title: "Classes and Objects"
 date: 2019-06-23T22:20:25-04:00
-draft: true
+draft: false
 sort_key: 15
 category: "Python"
 ---
@@ -96,7 +96,7 @@ class Car:
 print(Car.count_cars())
 ```
 
-Notice that there is no `self` argument, because it's no longer needed. 
+Notice that there is no `self` argument, because it's no longer needed.
 
 ## Modify Object Properties
 

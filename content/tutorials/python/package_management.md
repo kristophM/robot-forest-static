@@ -1,7 +1,7 @@
 ---
 title: "Package Management"
 date: 2019-06-23T22:34:01-04:00
-draft: true
+draft: false
 sort_key: 20
 category: "Python"
 ---

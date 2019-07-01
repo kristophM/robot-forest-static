@@ -1,7 +1,7 @@
 ---
 title: "Syntax And Idioms"
 date: 2019-06-23T22:03:45-04:00
-draft: true
+draft: false
 sort_key: 3
 category: "Python"
 ---
@@ -71,4 +71,4 @@ ternary operator. In Python, a similar operator exists, and it looks like this: 
 For example, `x, y = 5, 4` will assign both x and y.
 
 * **and instead of &&:** You may be used to double ampersands and double pipes from
-other languages, but in Python you literally spell out "and" and "or". 
+other languages, but in Python you literally spell out "and" and "or".

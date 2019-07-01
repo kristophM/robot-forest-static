@@ -1,7 +1,7 @@
 ---
 title: "Inheritance and Polymorphism"
 date: 2019-06-23T22:20:25-04:00
-draft: true
+draft: false
 sort_key: 15
 category: "Python"
 ---

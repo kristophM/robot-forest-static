@@ -1,7 +1,7 @@
 ---
 title: "Python Loops"
 date: 2019-06-26T22:20:08-04:00
-draft: true
+draft: false
 sort_key: 14.5
 category: "Python"
 ---

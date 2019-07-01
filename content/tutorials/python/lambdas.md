@@ -1,7 +1,7 @@
 ---
 title: "Lambdas"
 date: 2019-06-23T22:20:25-04:00
-draft: true
+draft: false
 sort_key: 15
 category: "Python"
 ---
@@ -36,7 +36,7 @@ print(list(result))
 When to use lambdas vs. regular functions in Python? Usually a good time to use
 lambdas is when you need to pass a function as an argument into another function.
 For example, the `map()` function above takes in a function as an argument. Writing
-an anonymous function is a much more compact way to describe a functionality than 
+an anonymous function is a much more compact way to describe a functionality than
 to write a regular named function. See how compact we can make the above logic:
 
 ```python

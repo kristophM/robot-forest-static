@@ -1,7 +1,7 @@
 ---
 title: "Strings"
 date: 2019-06-23T22:04:38-04:00
-draft: true
+draft: false
 sort_key: 6
 category: "Python"
 ---
@@ -86,7 +86,7 @@ print(str.strip())
 # split into list
 print(str.split())
 
-# replace words with string 
+# replace words with string
 print(str.replace('fox', 'bear'))
 
 # lower/upper case

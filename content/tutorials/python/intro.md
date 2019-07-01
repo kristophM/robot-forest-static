@@ -1,7 +1,7 @@
 ---
 title: "Intro"
 date: 2019-06-25T22:35:32-04:00
-draft: true
+draft: false
 sort_key: 0
 category: "Python"
 ---

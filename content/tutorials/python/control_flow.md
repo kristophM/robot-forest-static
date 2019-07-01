@@ -1,7 +1,7 @@
 ---
 title: "Control Flow"
 date: 2019-06-23T22:20:08-04:00
-draft: true
+draft: false
 sort_key: 14
 category: "Python"
 ---
@@ -68,4 +68,4 @@ if x < y or a > b:
 # Python Switch - Case Statements
 
 Python, unlike most languages, does not have `switch` statements built in. Rather,
-it favors if..else statements as illustrated above. 
+it favors if..else statements as illustrated above.

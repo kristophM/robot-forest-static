@@ -1,7 +1,7 @@
 ---
 title: "Functions"
 date: 2019-06-23T22:20:25-04:00
-draft: true
+draft: false
 sort_key: 15
 category: "Python"
 ---
@@ -75,4 +75,4 @@ print(a, b)
 
 Note that for functions that return a tuple, you can "deconstruct" the returned tuple
 into separate variables and assign them directly. In the above example, "a" and "b"
-get assigned automatically to the components of the returned tuple. 
+get assigned automatically to the components of the returned tuple.
